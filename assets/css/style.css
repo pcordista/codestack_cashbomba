@@ -1,0 +1,311 @@
+html {
+	scroll-behavior: smooth;
+}
+
+* {
+    max-width: 100vw !important;
+    box-sizing: border-box
+}
+
+body {
+    box-sizing: border-box;
+    max-width: 100vw !important;
+	font-family: 'Montserrat Light';
+	padding: 0;
+	margin: 0;
+}
+
+:root {
+    --colorPurpleDark: #512645;
+    --colorPurple: #7c3a6a;
+    --colorYellow: #ffa60a;
+    --colorCiano: #0c9480;
+}
+
+input {
+	border: 1px solid lightgray !important;
+	margin-bottom: 0px !important
+}
+
+input::placeholder {
+	padding-left: 15px
+}
+
+
+/* FONT */
+.montserratBold {
+    font-family: 'Montserrat Bold';
+}
+.montserratRegular {
+    font-family: 'Montserrat';
+}
+.montserratLight {
+    font-family: 'Montserrat Light';
+}
+.montserratSemiBold {
+    font-family: 'Montserrat Medium';
+}
+.myriadProBold {
+    font-family: 'MyriadPro Bold';
+}
+.myriadProRegular {
+    font-family: 'MyriadPro Regular';
+}
+
+/****************\ MAIN /****************/
+.content-title {
+	font-size: 1.7rem
+}
+
+.content-info {
+	font-size: 0.9rem;
+}
+
+/****************\ MENU /****************/
+/* MESTRE */
+.menu {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 10;
+	padding: 2rem
+}
+
+/* LEFT */
+.menu_left {
+	width: 65%;    
+	height: 80px;
+    display: flex;
+}
+
+.menu_left > a {
+	padding: 2rem 1.2rem;
+	transition: .5s
+}
+
+.menu_left > a:hover {
+	background-color: var(--colorPurple);
+	transition: .5s
+}
+
+/* RIGHT */
+
+.menu_right {
+	width: 34%
+}
+
+.menu_right > img {
+	width: 200px
+}
+
+
+/****************\ SLIDER /****************/
+
+/* CONTROLS */
+.carousel-controls-item {
+	position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.middle-indicator > .left {
+	top: 0;
+	bottom: 0;
+	left: 7%;
+    align-items: center;
+    position: absolute;
+    z-index: 2;
+}
+
+.middle-indicator > .right {
+	top: 0;
+	bottom: 0;
+	right: 7%;
+    align-items: center;
+    position: absolute;
+    z-index: 2;
+}
+
+.middle-indicator > div > a > img {
+	height: 70px
+}
+
+.carousel .indicators .indicator-item.active {
+	background-color: var(--colorYellow) !important
+}
+
+/* CONTAINER TEXT */
+.carousel-item-container {
+	position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.carousel-item-content {
+	width: 70%;
+    display: flex;
+    justify-content: center;
+	align-items: center;
+}
+
+.carousel-item-text {
+	padding: 1.5rem;
+	width: 50%;
+}
+
+.carousel-item-title {
+	font-size: 2.2rem
+}
+
+.carousel-item-subtitle {
+    font-size: 1.5rem;
+}
+
+.carousel-item-price-container {
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-item-price-moeda {
+	font-size: 1.8rem;
+	padding-right: .5rem;
+    padding-top: .3rem;
+}
+
+.carousel-item-price-valor {
+	font-size: 3.1rem
+}
+
+.carousel-item-btn {
+	color: var(--colorPurpleDark);
+	background-color: white;
+	z-index: 3;
+    padding: 1.1rem .3rem;
+}
+
+
+
+/****************\ SOBRE /****************/
+.sobre {
+    background: url('../img/bg_aboutus.jpg');
+	color: white;
+	font-size: 1.2rem
+}
+
+.sobre::after {
+    content: " ";
+    height: 30px;
+    width: 100%;
+    background: url('../img/borda_aboutus.png') no-repeat;
+    background-size: 100% 100% !important;
+    position: absolute;
+    bottom: -29px;
+    z-index: 5;
+}
+
+.sobre-content {
+	padding: 3rem;
+	width: 70%;
+	text-align: center
+}
+
+/****************\ VENDER /****************/
+.vender {
+    background: url('../img/bg_bombausada.jpg');
+	padding: 3rem;
+	color: var(--colorPurpleDark);
+	font-size: 1.4rem
+}
+
+
+.vender::after {
+    content: " ";
+    height: 30px;
+    width: 100%;
+    background: url('../img/borda_bombausada.png') no-repeat;
+    background-size: 100% 100% !important;
+    position: absolute;
+	bottom: -29px;
+	left: 0;
+    z-index: 5;
+}
+
+.vender-btn {
+	color: white;
+	background-color: var(--colorPurpleDark);
+	z-index: 3;
+    padding: 1rem 1.3rem;
+}
+
+/****************\ COMPRAR /****************/
+.comprar {
+    background-color: var(--colorYellow);
+    color: var(--colorPurpleDark) !important;
+    background-size: 100% 100% !important;
+    justify-content: center;
+	padding: 6rem 0 4rem !important;
+	font-size: 1.4rem
+}
+
+/****************\ MODELOS /****************/
+.modelos {
+    background-color: var(--colorPurpleDark);
+    color: white !important;
+	padding: 3rem;
+}
+
+.modelos-title {
+	font-size: 2.3rem;
+	padding-bottom: 1.5rem
+}
+
+.modelos-subtitle {
+	font-size: 1.3rem;
+	padding: 1rem 0
+}
+
+.modelos-img {
+	margin-right: 2rem;
+}
+
+.modelos-legenda {
+	position: absolute;
+    bottom: 0;
+    left: 30%;
+    display: flex;
+}
+
+.modelos-legenda > div {
+	margin: 1rem
+}
+
+.modelos-text > div > div > img {
+	margin-bottom: 1rem
+}
+
+/****************\ CONTATO /****************/
+.contato {
+    background-color: var(--colorCiano);
+    color: white !important;
+    justify-content: center;
+    padding: 2rem 0 !important;
+}
+
+.contato-container {
+    background-color: white;
+	color: black;
+	padding: 3rem;
+    padding-bottom: 30px;
+}
+
+.contato-btn {
+    background: linear-gradient(to right, #0079df , #00cfb6);
+    color: white;
+    line-height: 40px !important;
+    padding: 0 70px !important;
+}

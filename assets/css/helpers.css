@@ -1,0 +1,92 @@
+/*********************\ DISPLAY /*********************/
+
+.relative {
+    position: relative !important;
+}
+
+.flex {
+    display: flex !important;
+}
+
+
+
+.justifycenter {
+    justify-content: center !important
+}
+
+/*********************\ MARGIN /*********************/
+
+.margin_1_top {
+    margin-top: 1rem !important
+}
+
+.margin_2_top {
+    margin-top: 2rem !important
+}
+
+.margin_3_top {
+    margin-top: 3rem !important
+}
+
+.margin_2_bottom {
+    margin-bottom: 2rem !important
+}
+
+/*********************\ PADDING /*********************/
+
+.nopadding {
+    padding: 0px !important
+}
+
+.padding_horiz_none {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+/*********************\ TEXT /*********************/
+
+.textJustify {
+    text-align: justify
+}
+
+.textRight {
+    text-align: right
+}
+
+.textCenter {
+    text-align: center
+}
+
+.textUpper {
+    text-transform: uppercase
+}
+
+.textCapitalize {
+    text-transform: capitalize;
+}
+
+.textItalic {
+    font-style: italic
+}
+
+/*********************\ RESIZES /*********************/
+.widthfull { width: 100% !important }
+.desktop { display: block }
+.mobile { display: none }
+
+@media (max-width: 961px)  {
+    .desktop { display: none }
+    .mobile { display: block }
+    
+    /* ALINHAMENTO */
+    .centerMobile {
+        text-align: center
+    }
+
+    /* MARGIN */
+    .margin_1_bottom_mobile {
+        margin-bottom: 1rem !important
+    }
+
+    
+}

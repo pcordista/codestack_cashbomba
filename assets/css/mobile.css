@@ -1,0 +1,209 @@
+.menumobile {
+    position: absolute;
+    z-index: 999;
+    left: 0;
+    right: 0;  
+    padding: .5rem;
+}
+
+.menumobile_logo > img  {
+    width: 30%;
+}
+
+.menumobile_toogle {
+    color: white;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+
+.menumobile_toogle > i {
+    font-size: 2.5rem
+}
+
+
+.pushmenu { /*this is the nav*/
+    background: var(--colorPurple);
+    width: 240px;
+    height: 100%;
+    top: 0;
+    z-index: 1000;
+    position:fixed;
+}
+  
+.pushmenu a {
+    display: block; /* drops the nav vertically*/
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 1px solid lightgray;
+    padding: 14px;
+}
+  
+.pushmenu a:hover {
+    background:#00A287;
+    color: white
+}
+  
+.pushmenu a:active {
+    background: #454f5c;
+    color: #fff;
+}
+  
+.pushmenu-left {
+    left: -240px;
+  
+}
+  
+.pushmenu-left.pushmenu-open {
+    left: 0;
+}
+  
+.pushmenu-push {
+    overflow-x: hidden;
+    position: relative;
+    left: 0;
+}
+  
+.pushmenu-push-toright {
+    left: 240px;
+}
+  
+/*Transition*/
+.pushmenu, .pushmenu-push {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;  
+}
+  
+  
+nav-list.active {
+    background-position: -33px top;
+}
+  
+.buttonset {
+    background: #00A287;
+    height: 16px;
+    padding: 10px 20px 20px;
+}
+   
+section.content {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px 20px;
+}
+
+.menuimg {
+    width: 21px;
+    margin-right: .6rem
+}
+
+
+@media (max-width: 961px)  {
+    
+    .vender::after, .sobre::after {
+        background-size: 259% 100% !important
+    }
+
+    .carousel {
+        height: 400px !important
+    }
+    /* SLIDER */
+    .carousel-item-content {
+        width: 80%
+    }
+
+    .carousel-item-bomba > img {
+        height: 30%;
+    }
+
+    .carousel-item-text {
+        width: 70%;
+    }
+
+    .carousel-item-title {
+        font-size: 1.5rem;
+        text-align: center
+    }
+
+    .carousel-item-subtitle {
+        font-size: 1rem;
+        margin-top: .5rem
+    }
+
+    .carousel-item-price-moeda {
+        font-size: 1.2rem;
+        padding-top: 0rem;
+        padding-right: .2rem;
+    }
+
+    .carousel-item-price-valor {
+        font-size: 1.6rem;
+    }
+
+    .carousel-item-btn {
+        font-size: .8rem
+    }
+
+    .middle-indicator > .left {
+        left: 2%;
+    }
+
+    .middle-indicator > .right {
+        right: 2%;
+    }
+
+    .middle-indicator > div > a > img {
+        height: 30px
+    }
+
+    /* SOBRE */
+    .sobre-content {
+        width: 90%;
+        padding: 1rem 0
+    }
+
+    /* VENDER */
+    .vender {
+        padding: 3rem 1rem;
+    }
+
+    /* MODELOS */
+    .modelos {
+        padding: 3rem 1rem 1rem;
+    }
+
+    .modelos-text > div > div > img {
+        margin: 1rem 0
+    }
+
+    .modelos-legenda-mobile {
+        margin: 1rem 0;
+        text-align: center
+    }
+
+    .modelos-legenda-mobile > div {
+        margin: .5rem 0
+    }
+
+    /* CONTAOT */
+    .contato-img {
+        width: 100%;
+        margin-bottom: 2rem
+    }
+
+    .contato-container {
+        padding: 2rem
+    }
+
+    input::placeholder {
+        font-size: .8rem
+    }
+
+    .carousel .indicators .indicator-item {
+        height: 5px;
+        width: 5px
+    }
+
+    
+}
